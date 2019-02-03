@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "b85ee636-9844-48b2-b0c4-e76e0399fa7b",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkzMDI5OTksImlhdCI6MTU0OTIxNjU3OSwic3ViIjozfQ.e2Bn0y2HcugSUIpSlPnCm9gBdJtFLbc-DTJIGccoIm4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkxNjg2NjEsImlhdCI6MTU0OTA4MjI0MSwic3ViIjoxfQ.zwK_ACscyBF5-q_oXp3e6uiJfToUSQlrHBPjZG_LaS4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"example11@gmail.com\",\n  \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkxNjg2NjEsImlhdCI6MTU0OTA4MjI0MSwic3ViIjoxfQ.zwK_ACscyBF5-q_oXp3e6uiJfToUSQlrHBPjZG_LaS4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"example11@gmail.com\",\n  \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyOTQ3MTcsImlhdCI6MTU0OTIwODI5Nywic3ViIjoyfQ.WoFdY5QcQtKLa4ftPmvG8MPFprTiX_y_nkaMzjatC7M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Casual_Shirt_Denim_01\",\n\t\"brand\" : \"Denim\",\n\t\"category\" : \"Casual Shirt\",\n\t\"productCode\" : \"CS_D_09036\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/item/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODg1MjQsImlhdCI6MTU0OTIwMjEwNCwic3ViIjoxfQ.evKiGdsb25gHXA5CS5XSVDzumi3ZxjC0_JEodsqrFeU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"jeans5_blue\",\n\t\"item_id\" : 2,\n\t\"sellingPrice\" : 1400,\n\t\"costPrice\" : 1200,\n\t\"quantity\" : 7\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/item/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODcyNzIsImlhdCI6MTU0OTIwMDg1Miwic3ViIjoxfQ.WLJ2KfFxJ0pVHCY8uvonkP1jzbB5sShm3DOfu6xrWCY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Roadster_jeans5\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/item/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create variant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODg1MjQsImlhdCI6MTU0OTIwMjEwNCwic3ViIjoxfQ.evKiGdsb25gHXA5CS5XSVDzumi3ZxjC0_JEodsqrFeU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Peter_England_Shirt_L\",\n\t\"item_id\" : 3,\n\t\"sellingPrice\" : 1600,\n\t\"costPrice\" : 1300,\n\t\"quantity\" : 10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/variant/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"variant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Variant",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODg1MjQsImlhdCI6MTU0OTIwMjEwNCwic3ViIjoxfQ.evKiGdsb25gHXA5CS5XSVDzumi3ZxjC0_JEodsqrFeU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/variant/?name=jeans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"variant",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "jeans"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Variant",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODg1MjQsImlhdCI6MTU0OTIwMjEwNCwic3ViIjoxfQ.evKiGdsb25gHXA5CS5XSVDzumi3ZxjC0_JEodsqrFeU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Peter_England_Shirt_L\",\n\t\"item_id\" : 3,\n\t\"sellingPrice\" : 2000,\n\t\"costPrice\" : 1500,\n\t\"quantity\" : 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/variant/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"variant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Variant",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyODg1MjQsImlhdCI6MTU0OTIwMjEwNCwic3ViIjoxfQ.evKiGdsb25gHXA5CS5XSVDzumi3ZxjC0_JEodsqrFeU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Peter_England_Shirt_L\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/variant/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"variant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDkyOTQ3MTcsImlhdCI6MTU0OTIwODI5Nywic3ViIjoyfQ.WoFdY5QcQtKLa4ftPmvG8MPFprTiX_y_nkaMzjatC7M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Casual_Shirt_Denim_01\",\n\t\"brand\" : \"Denim\",\n\t\"category\" : \"Casual Shirt\",\n\t\"productCode\" : \"CS_D_03409\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/item/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
