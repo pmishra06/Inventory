@@ -3,7 +3,14 @@ The application provides API to create/update/delete Item and its Variants withi
 It also allows users to register users, login them and keeps tracks of any user action performed to Create/Update/Delete Item and its Variants.
 
 ## Usage
-
+- [Prerequisite](#Prerequisite)
+- [Starting the application](#Starting-the-application)
+- [API Documentation](#api-documentation)
+- [Users](#users)
+- [Item](#item)
+- [Variants](#variants)
+- [User Action](#user-action)
+- [Postman API Collection](#postman-api-collection)
 
 ## Prerequisite
 
@@ -684,3 +691,7 @@ Expected Response:
     ]
 }
 ```
+
+## Postman API Collection
+
+Import `Inventory.postman_collection.json` to view API collection in Postman
