@@ -85,9 +85,9 @@ def paginate_variants(page, name, item_id):
 
     previous = None
     if pagination.has_prev:
-        previous = url_for('vaiant.vaiantlist', page=page - 1, _external=True)
+        previous = url_for('variant.variantlist', page=page - 1, _external=True)
     nex = None
     if pagination.has_next:
-        nex = url_for('vaiant.vaiantlist', page=page + 1, _external=True)
+        nex = url_for('variant.variantlist', page=page + 1, _external=True)
     vaiants = pagination.items
     return vaiants, nex, pagination, previous
